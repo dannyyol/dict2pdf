@@ -56,7 +56,15 @@ class PDFGenerator:
             wordWrap='CJK',
             splitLongWords=True
         )
-        text = text.upper() if style_config.get('text_transform') == 'uppercase' else text
+        # Apply text transformation if specified
+        text_transform = style_config.get('text_transform')
+        if text_transform == 'uppercase':
+            text = text.upper()
+        elif text_transform == 'lowercase':
+            text = text.lower()
+        elif text_transform == 'capitalize':
+            text = text.title()
+
         return Paragraph(text, para_style)
 
     @staticmethod

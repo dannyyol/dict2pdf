@@ -5,8 +5,8 @@ import numpy as np
 custom_styles = {
     'table_title': {
         'font_size': 18,
-        'space_after': 50,
-        'text_transform': 'uppercase'
+        'space_after': 20,
+        'text_transform': 'capitalize'
     },
     'cell': {
         'word_wrap': False,
@@ -165,6 +165,7 @@ PDFGenerator.generate_pdf_from_dict(
     layout="horizontal",
     output_dir="output_pdfs",  # Specify output directory
     title_key="title",  # Use Name column as entry titles
+    styles=custom_styles
 )
 
 # Generate PDF (vertical layout)

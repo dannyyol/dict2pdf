@@ -23,7 +23,7 @@ DEFAULT_STYLES = {
         'underline_color': colors.HexColor('#3498db'),
         'underline_width': 2,
         'underline_offset': -4,
-        'text_transform': 'uppercase',
+        'text_transform': 'lowercase',
         'letter_spacing': 0.5
     },
     'horizontal_table_title': {
