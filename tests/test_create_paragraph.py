@@ -1,11 +1,11 @@
 from test_base import PDFGeneratorTestBase
-from pdf_generator import PDFGenerator
+from dict2pdf import PDFGenerator
 from reportlab.lib import colors
 
 class TestCreateParagraph(PDFGeneratorTestBase):
     def test_create_paragraph_basic(self):
         paragraph = PDFGenerator.create_paragraph("Test", 'table_title', self.default_styles)
-        self.assertEqual(paragraph.text, "TEST")  # Updated expectation since table_title style uses uppercase
+        self.assertEqual(paragraph.text, "TEST")
     
     def test_create_paragraph_custom_style(self):
         custom_styles = {
@@ -19,5 +19,4 @@ class TestCreateParagraph(PDFGeneratorTestBase):
     
     def test_create_paragraph_default_style(self):
         paragraph = PDFGenerator.create_paragraph("Test", 'nonexistent_style', self.default_styles)
-        # Update expected font size to 8 to match generator.py implementation
         self.assertEqual(paragraph.style.fontSize, 8)

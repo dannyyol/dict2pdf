@@ -26,7 +26,7 @@ pip install pdf-generator
 ## 📄 Basic Usage
 
 ```python
-from pdf_generator import PDFGenerator
+from dict2pdf import PDFGenerator
 
 data = [
     {
@@ -52,7 +52,7 @@ PDFGenerator.generate_pdf_from_dict(
 ## 🎨 Custom Styling
 
 ```python
-from pdf_generator import PDFGenerator
+from dict2pdf import PDFGenerator
 
 custom_styles = {
     'table_title': {

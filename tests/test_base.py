@@ -1,5 +1,5 @@
 import unittest
-from pdf_generator import PDFGenerator, DEFAULT_STYLES
+from dict2pdf import PDFGenerator, DEFAULT_STYLES
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import Paragraph, Table

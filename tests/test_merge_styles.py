@@ -1,6 +1,6 @@
 import unittest
 from test_base import PDFGeneratorTestBase
-from pdf_generator import PDFGenerator
+from dict2pdf import PDFGenerator
 
 class TestMergeStyles(PDFGeneratorTestBase):
     def test_merge_styles_basic(self):

@@ -1,4 +1,4 @@
-from pdf_generator import PDFGenerator, DEFAULT_STYLES
+from dict2pdf import PDFGenerator, DEFAULT_STYLES
 import pandas as pd
 import numpy as np
 

@@ -1,5 +1,5 @@
 from test_base import PDFGeneratorTestBase
-from pdf_generator import PDFGenerator
+from dict2pdf import PDFGenerator
 from reportlab.platypus import Table, Paragraph
 
 class TestGenerateTable(PDFGeneratorTestBase):
