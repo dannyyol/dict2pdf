@@ -160,7 +160,7 @@ data = [
 # Generate PDF (horizontal layout)
 PDFGenerator.generate_pdf_from_dict(
     data,
-    output_file="dataframe_horizontal1.pdf",
+    output_file="dataframe_horizontal.pdf",
     title="Research Projects",
     layout="horizontal",
     output_dir="output_pdfs",  # Specify output directory
@@ -171,7 +171,7 @@ PDFGenerator.generate_pdf_from_dict(
 # Generate PDF (vertical layout)
 PDFGenerator.generate_pdf_from_dict(
     data,
-    output_file="dataframe_vertical_recursive.pdf",
+    output_file="dataframe_vertical.pdf",
     title="Research Projects",
     layout="vertical",
     output_dir="output_pdfs",  # Specify output directory
