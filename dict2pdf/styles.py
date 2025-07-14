@@ -1,4 +1,3 @@
-# dict2pdf/styles.py
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 
@@ -28,7 +27,7 @@ DEFAULT_STYLES = {
     },
     'horizontal_table_title': {
         'font_name': 'Helvetica-Bold',
-        'font_size': 12, # Reduced from 16
+        'font_size': 12,
         'text_color': colors.HexColor('#3498db'),
         'space_after': 12,
         'alignment': TA_LEFT,
